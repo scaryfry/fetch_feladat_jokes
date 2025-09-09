@@ -32,3 +32,20 @@ async function getJokeId() {
         }
 
 }
+async function jokebyType() {
+      const container = document.getElementById("select-container");
+      container.innerHTML = "";
+
+      const select = document.createElement("select");
+      select.id = "jokeType";
+
+      const types = ["Programming", "Knock-Knock", "General"];
+      types.forEach(type => {
+        const option = document.createElement("option");
+        option.value = type.toLowerCase().replace(/\s/g, "-");
+        option.textContent = type;
+        select.appendChild(option);
+      });
+      container.appendChild(select);
+      
+    }
