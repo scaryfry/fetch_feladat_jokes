@@ -46,3 +46,17 @@ button:hover {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+select{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+input{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}

@@ -9,10 +9,18 @@
 <body>
     <h1>Jokes</h1>
     <button onclick="randomJoke()">🎲 Random Joke</button>
+    <div>
     <button onclick="getJokeId()">🆔 Joke by ID</button>
-    <button onclick="jokebyType()">🎭 Joke by Type</button>
-
-    <div id="select-container"></div>
+    <input type="text" id="jokeIdInput" placeholder="Enter Joke ID">
+    </div>
+    <div id="type-buttons">
+        <button onclick="jokebyType()">🎭 Joke by Type</button>
+        <select name="jokeType" id="jokeTypeSelect">
+            <option value="programming">Programming</option>
+            <option value="knock-knock">Knock-Knock</option>
+            <option value="general">General</option>
+        </select>
+    </div>
     <div id="joke-container"></div>
 </body>
 <script src="script.js"></script>
