@@ -5,23 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jokes</title>
+    <h1>Jokes</h1>
+    <nav>
+        <button id="btn-1">🎭 Joke by Type</button>
+        <button id="btn-2">🆔Joke By Id</button>
+        <button onclick="randomJoke()" id="btn-3">🎲 Random Joke</button>
+    </nav>
 </head>
 <body>
-    <h1>Jokes</h1>
-    <button onclick="randomJoke()">🎲 Random Joke</button>
-    <div>
-    <button onclick="getJokeId()">🆔 Joke by ID</button>
-    <input type="text" id="jokeIdInput" placeholder="Enter Joke ID">
-    </div>
     <div id="type-buttons">
-        <button onclick="jokebyType()">🎭 Joke by Type</button>
-        <select name="jokeType" id="jokeTypeSelect">
-            <option value="programming">Programming</option>
-            <option value="knock-knock">Knock-Knock</option>
-            <option value="general">General</option>
-        </select>
+    <select name="jokeType" id="jokeTypeSelect" style="display: none;">
+        <option value="programming">Programming</option>
+        <option value="knock-knock">Knock-Knock</option>
+        <option value="general">General</option>
+    </select>
+    <button onclick="jokebyType()" id="btn-type" style="display: none;">Vicc kérése</button>
+    <input type="number" id="jokeIdInput" placeholder="Írj be egy id-t" style="display: none;">
+    <button onclick="getJokeId()" id="btn-id" style="display: none;">Vicc kérése</button>
+    
     </div>
     <div id="joke-container"></div>
 </body>
 <script src="script.js"></script>
 </html>
+
+<!-- <button onclick="randomJoke()" style="display: ;">🎲 Random Joke</button>
+<div>
+<button onclick="getJokeId()">🆔 Joke by ID</button>
+<input type="text" id="jokeIdInput" placeholder="Enter Joke ID">
+</div>
+<div id="type-buttons">
+    <button onclick="jokebyType()">🎭 Joke by Type</button>
+    <select name="jokeType" id="jokeTypeSelect">
+        <option value="programming">Programming</option>
+        <option value="knock-knock">Knock-Knock</option>
+        <option value="general">General</option>
+    </select>
+</div>
+<div id="joke-container"></div> -->

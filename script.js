@@ -53,3 +53,25 @@ async function jokebyType() {
     `;
   }
 }
+
+document.getElementById('btn-1').addEventListener("click", () => 
+{
+  document.getElementById('jokeTypeSelect').style.display = "inline-block";
+  document.getElementById('btn-type').style.display = "inline-block";
+  document.getElementById('jokeIdInput').style.display = "none";
+  document.getElementById('btn-id').style.display = "none";
+})
+document.getElementById('btn-2').addEventListener("click", () => 
+  {
+    document.getElementById('jokeTypeSelect').style.display = "none";
+    document.getElementById('btn-type').style.display = "none";
+    document.getElementById('jokeIdInput').style.display = "inline-block";
+    document.getElementById('btn-id').style.display = "inline-block";
+  })
+  document.getElementById('btn-3').addEventListener("click", () => 
+    {
+      document.getElementById('jokeTypeSelect').style.display = "none";
+      document.getElementById('btn-type').style.display = "none";
+      document.getElementById('jokeIdInput').style.display = "none";
+      document.getElementById('btn-id').style.display = "none";
+    })
